@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Make An Impact</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid bg-success">
+      <div class="row">
+        <div class="col-3 col-md-5">
+          <!-- YOUR CUSTOM STYLE CAN GO HERE -->
+          <div>
+            <h2 class="p-md-5 p-2">
+              Impact<b class="text-danger">.</b>
+            </h2>
+          </div>
+        </div>
+        <!--REVIEW I tried this originally but it seems like d-flex and d-none or d-md-block doesn't well with it? Why
+         <div class="col-6 d-none d-md-block d-flex align-items-center justify-content-around gap-1 text-white"> -->
+        <div class="col-9 col-md-7 d-md-flex align-items-center justify-content-around text-white">
+          <div class="d-none d-md-block d-md-flex gap-2">
+            <!-- REVIEW when using gap-5, it runs off during half-screen. Is no work around for it? One thought is maybe to have it with ld screens but it's 12:38 and very tired. -->
+            <!-- REVIEW d-md-flex AND gap-5 need to work together to get the spaces apart? -->
+            <a>Home</a>
+            <a>About</a>
+            <a>Services</a>
+            <a>Portfolio</a>
+            <a>Team</a>
+            <a>Blog</a>
+            <a>Drop Down 🔻</a>
+            <a>Contact</a>
+          </div>
+          <div class="d-md-none text-black text-end">
+            <i class="fs-1 mdi mdi-menu "></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid bg-success magic-offset ">
+      <div class="row pb-5">
+        <div class="col-12 col-md-5 order-md-1 order-2 text-white">
+          <!-- REVIEW Half Screen shows overlap. what's the best solution for it? One solution was to increase the height of the XXvh to help prevent possible -->
+          <div class="p-5">
+            <h1>
+              Welcome to Impact
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cupiditate minima saepe sapiente, dolores
+              laudantium eum libero et unde sit, reprehenderit, quo incidunt? Ipsam, voluptates debitis praesentium modi
+              facilis repudiandae!</p>
+            <div>
+              <button> Get Started</button>
+              <i class="mdi mdi-play-circle">icon Watch Video</i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 p-5 order-md-2 order-1">
+          <img class="img-fluid"
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Office workers high-fiving like it's normal"></img>
+        </div>
+      </div>
+      <div class="row magic-cards">
+        <!-- REVIEW  Still struggling to find out why I needed to levels deep of divs. Is this due to the same level as column so it doesn't seem to give the spacing around?-->
+        <!-- <div>
+          <div class="col-3 bg-success text-center rounded shadow px-2 py-5">
+            In the Source Code, there's another level of div here.? 
+            <i>Icon</i>
+            <h3>Lorem ipsum</h3>
+          </div>
+        </div> -->
+        <div class="col-12 col-md-3 mb-3 mb-md-0">
+          <div class="bg-success h-100 text-center rounded shadow px-2 py-5">
+            <!-- REVIEW I thought it was mdi-easel? ps://icons.getbootstrap.com/icons/easel/   that one doesn't work?-->
+            <i class="fs-1 mdi mdi-presentation"></i>
+            <h3 class="fs-2 fw-bold">Lorem, ipsum.</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-3 mb-md-0">
+          <div class="bg-success h-100 text-center rounded shadow px-2 py-5">
+            <i class="fs-1 mdi mdi-diamond-stone"></i>
+            <h3 class="fs-2 fw-bold">Sed ut perspiciatis</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-3 mb-md-0">
+          <div class="bg-success h-100 text-center rounded shadow px-2 py-5">
+            <i class="fs-1 mdi mdi-map-marker"></i>
+            <!-- REVIEW I thought it was mdi-geo-alt. Am I looking at the wrong place?-->
+            <h3>Magni Dolores</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-3 mb-md-0">
+          <div class="bg-success h-100 text-center rounded shadow px-2 py-5">
+            <i class="fs-1 mdi mdi-apple-keyboard-command"></i>
+            <h3>Nemo Enim</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus suscipit numquam unde delectus
+            asperiores voluptatem doloribus sit. Iusto blanditiis excepturi molestiae ad tempora aspernatur saepe dolore
+            sit reprehenderit eius.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

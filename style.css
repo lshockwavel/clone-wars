@@ -1,0 +1,38 @@
+/* body {
+  background-color: red;
+} */
+
+/* .magic-cards div {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-inline-end-color: red;
+} */
+
+@media screen and (min-width: 768px) {
+  .magic-cards {
+    position: absolute;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 100%;
+    /* REVIEW How would I know how to make it move it across the page? Is there any tricks or tips about width */
+    /* display: flex; */
+    /* REVIEW  Does Justify content not work due to be position absolute in a tight area or something?*/
+    /* justify-content: space-around;
+    align-items: center; */
+    /* gap: 20px; */
+    bottom: -90px;
+
+  }
+
+
+  .magic-offset {
+    position: relative;
+    padding-bottom: 5em;
+    margin-bottom: 1em;
+  }
+}
+
+
+.magic-offset+* {
+  margin-top: 90px;
+}
